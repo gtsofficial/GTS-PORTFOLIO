@@ -549,6 +549,33 @@ footer p{
     }
 
 }
+@media (max-width:650px){
+    .home-img{
+        margin-left: 6rem;
+    }
+    .hero-text h2{
+        font-size: 70px;
+    }
+    .hero-text h3{
+        font-size: 25px;
+    }
+    input{
+        width: 450px;
+        height: 50px;
+        font-size: 15px;
+    }
+    textarea{
+        width: 450px;
+        height: 250px;
+        font-size: 15px;
+    }
+    button{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+
+}
+
 @media (max-width:600px){
 
     .header .logo{
@@ -568,6 +595,9 @@ footer p{
     }
     .hero-buttons a{
         padding: 10px 24px;
+    }
+    .home-img{
+        margin-left: 5rem;
     }
 
     /* Skills Section */
@@ -599,6 +629,19 @@ footer p{
 
     .contact{
         margin-top: -40px;
+    }
+    input{
+        width: 400px;
+        height: 40px;
+        font-size: 14px;
+    }
+    textarea{
+        width: 400px;
+        height: 200px;
+        font-size: 14px;
+    }
+    .contact-input{
+        margin-bottom: 40px;
     }
     .contact-content{
         max-width: 550px;
@@ -638,16 +681,38 @@ footer p{
         margin-top: 20px;
     }
     .home-img{
-        margin-left: 0;
+        margin-left: 3rem;
+
     }
     .home-img img{
-        width: 150px;
+        width: 270px;
+    }
+    button{
+        padding: 8px 20px;
+        margin-bottom: 15px;
     }
 }
 
 @media (max-width:450px){
     .header .menu ul li a{
         display: none;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-buttons a{
+        font-size: 14px;
+    }
+    input{
+        width: 350px;
+        height: 40px;
+        font-size: 14px;
+    }
+    textarea{
+        width: 350px;
+        height: 200px;
+        font-size: 14px;
     }
 
 }
@@ -673,6 +738,12 @@ footer p{
         padding: 8px 12px;
         font-size: 14px;
     }
+    .home-img{
+        margin-left: 2rem;
+    }
+    .hone-img img{
+        width: 250px;
+    }
 
     /* About Section */
 
@@ -680,6 +751,81 @@ footer p{
         font-size: 18px;
     }
     .about-text p{
+        font-size: 12px;
+    }
+    input{
+        width: 300px;
+        height: 40px;
+        font-size: 12px;
+    }
+    textarea{
+        width: 300px;
+        height: 200px;
+        font-size: 12px;
+    }
+    button{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:370px){
+    .home-img{
+        margin-left: 3rem;
+    }
+    .home-img img{
+        width: 200px;
+    }
+    input{
+        width: 250px;
+        height: 40px;
+        font-size: 12px;
+    }
+    textarea{
+        width: 250px;
+        height: 200px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:350px){
+    .home-img{
+        margin-left: 3rem;
+    }
+    .home-img img{
+        width: 180px;
+    }
+    input{
+        width: 200px;
+        height: 40px;
+        font-size: 12px;
+    }
+    textarea{
+        width: 200px;
+        height: 180px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:320px){
+    .project-card{
+        min-width: 150px;
+        padding: 20px;
+    }
+    .home-img{
+        margin-left: 2rem;
+    }
+    .home-img img{
+        width: 180px;
+    }
+    input{
+        width: 180px;
+        height: 40px;
+        font-size: 12px;
+    }
+    textarea{
+        width: 180px;
+        height: 150px;
         font-size: 12px;
     }
 }
