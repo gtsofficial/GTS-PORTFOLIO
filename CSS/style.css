@@ -251,12 +251,14 @@ form{
 input{
     background-color: transparent;
     color: white;
-    width: 900px;
-    height: 60px;
+    width: 100%;
+    max-width: 900px;
+    height: 70px;
     border-radius: 10px;
     margin-top: -50px;
     padding-left: 15px;
     font-size: 18px;
+    box-sizing: border-box;
 }
 .contact-input{
     margin-bottom: 50px;
@@ -268,14 +270,16 @@ input:focus{
     transition: 0.3s;
 }
 textarea{
-    width: 900px;
-    height: 300px;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
     background-color: transparent;
     color: white;
     margin-bottom: 50px;
     font-size: 18px;
     border-radius: 10px;
     padding: 15px;
+    box-sizing: border-box;
 }
 button{
     padding: 12px 30px;
@@ -337,7 +341,6 @@ footer p{
         margin: 0 auto;
     }
     input{
-        width: 900px;
         height: 50px;
         border-radius: 8px;
         margin-top: -40px;
@@ -349,7 +352,6 @@ footer p{
         margin: 0 auto;
     }
     input{
-        width: 800px;
         height: 50px;
         border-radius: 8px;
         margin-top: -40px;
@@ -357,7 +359,6 @@ footer p{
         font-size: 16px;
     }
     textarea{
-        width: 800px;
         height: 250px;
         background-color: transparent;
         color: white;
@@ -387,7 +388,6 @@ footer p{
         margin: 0 auto;
     }
     input{
-        width: 700px;
         height: 50px;
         border-radius: 8px;
         margin-top: -40px;
@@ -395,7 +395,6 @@ footer p{
         font-size: 16px;
     }
     textarea{
-        width: 700px;
         height: 250px;
         background-color: transparent;
         color: white;
@@ -438,7 +437,6 @@ footer p{
         margin: 0 auto;
     }
     input{
-        width: 600px;
         height: 50px;
         border-radius: 8px;
         margin-top: -40px;
@@ -446,7 +444,6 @@ footer p{
         font-size: 16px;
     }
     textarea{
-        width: 600px;
         height: 250px;
         background-color: transparent;
         color: white;
@@ -490,12 +487,10 @@ footer p{
         font-size: 30px;
     }
     input{
-        width: 550px;
         height: 50px;
         font-size: 15px;
     }
     textarea{
-        width: 550px;
         height: 250px;
         font-size: 15px;
     }
@@ -534,12 +529,10 @@ footer p{
         font-size: 28px;
     }
     input{
-        width: 500px;
         height: 50px;
         font-size: 15px;
     }
     textarea{
-        width: 500px;
         height: 250px;
         font-size: 15px;
     }
@@ -560,12 +553,10 @@ footer p{
         font-size: 25px;
     }
     input{
-        width: 450px;
         height: 50px;
         font-size: 15px;
     }
     textarea{
-        width: 450px;
         height: 250px;
         font-size: 15px;
     }
@@ -631,12 +622,10 @@ footer p{
         margin-top: -40px;
     }
     input{
-        width: 400px;
         height: 40px;
         font-size: 14px;
     }
     textarea{
-        width: 400px;
         height: 200px;
         font-size: 14px;
     }
@@ -705,12 +694,10 @@ footer p{
         font-size: 14px;
     }
     input{
-        width: 350px;
         height: 40px;
         font-size: 14px;
     }
     textarea{
-        width: 350px;
         height: 200px;
         font-size: 14px;
     }
@@ -741,7 +728,7 @@ footer p{
     .home-img{
         margin-left: 2rem;
     }
-    .hone-img img{
+    .home-img img{
         width: 250px;
     }
 
@@ -754,12 +741,10 @@ footer p{
         font-size: 12px;
     }
     input{
-        width: 300px;
         height: 40px;
         font-size: 12px;
     }
     textarea{
-        width: 300px;
         height: 200px;
         font-size: 12px;
     }
@@ -777,12 +762,10 @@ footer p{
         width: 200px;
     }
     input{
-        width: 250px;
         height: 40px;
         font-size: 12px;
     }
     textarea{
-        width: 250px;
         height: 200px;
         font-size: 12px;
     }
@@ -796,12 +779,10 @@ footer p{
         width: 180px;
     }
     input{
-        width: 200px;
         height: 40px;
         font-size: 12px;
     }
     textarea{
-        width: 200px;
         height: 180px;
         font-size: 12px;
     }
@@ -819,12 +800,10 @@ footer p{
         width: 180px;
     }
     input{
-        width: 180px;
         height: 40px;
         font-size: 12px;
     }
     textarea{
-        width: 180px;
         height: 150px;
         font-size: 12px;
     }
