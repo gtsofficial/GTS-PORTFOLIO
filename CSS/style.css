@@ -95,6 +95,9 @@ section{
     font-size: 32px;
     margin-bottom: 20px;
 }
+.hero-text h3 span{
+    color: #d4af37;
+}
 .hero-text p{
     color: #b5b5b5;
     line-height: 1.7;
