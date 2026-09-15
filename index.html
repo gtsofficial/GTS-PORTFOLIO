@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
     <!-- ICON -->
-    <link rel="icon" href="images/icon.png" type="image/x-icon">    
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
 </head>
 <body>
 
@@ -17,16 +17,22 @@
         <div class="header">
             <h1 class="logo"><a href="#">Temidayo</a></h1>
 
-            <div class="menu">
+            <input type="checkbox" id="menuToggle" class="menu-toggle-checkbox">
+            <label for="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="menu" id="menu">
                 <ul>
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#skills">skills</a></li>
                     <li><a href="#projects">projects</a></li>
-                    <li><a href="https://docs.google.com/document/d/1HCRF-klUF26YH3vCPQMpshkoWseEUrxGVWk2a8yjph8/edit?usp=drive_link">CV</a></li>
+                    <li><a href="https://docs.google.com/document/d/1HCRF-klUF26YH3vCPQMpshkoWseEUrxGVWk2a8yjph8/edit?usp=drive_link" target="_blank" rel="noopener">CV</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
-
             </div>
         </div>
 
@@ -44,13 +50,13 @@
 
             <div class="hero-buttons">
                 <a href="index2.html">View My Work</a>
-                <a href="https://docs.google.com/document/d/1HCRF-klUF26YH3vCPQMpshkoWseEUrxGVWk2a8yjph8/edit?usp=drive_link">Download CV</a>
+                <a href="https://docs.google.com/document/d/1HCRF-klUF26YH3vCPQMpshkoWseEUrxGVWk2a8yjph8/edit?usp=drive_link" target="_blank" rel="noopener">Download CV</a>
             </div>
         </div>
 
-         <div class="home-img">
-                <img src="images/Profile image.png" alt="George Temidayo Samuel">
-            </div>
+        <div class="home-img">
+            <img src="images/profile-image.png" alt="George Temidayo Samuel">
+        </div>
 
     </section>
 
@@ -58,24 +64,24 @@
 
     <section class="about" id="about">
         <div class="section-title">
-            <p>GET TO KNOW ME </p>
+            <p>GET TO KNOW ME</p>
             <h2>About Me</h2>
         </div>
 
         <div class="about-content">
             <div class="about-text">
                 <h3>I'm George Temidayo Samuel</h3>
-                
+
                 <p>
                     I'm an entry-level web developer passionate about creating clean, responsive websites.
                     I enjoy turning ideas into simple and engaging digital experiences. I'm constantly learning,
                     improving and building with HTML and CSS. Every project is a step forward in my journey as a
                     developer.
                 </p>
+            </div>
 
-                <div class="about-image">
-                    <img src="images/About Section.png" alt="About Section img">
-                </div>
+            <div class="about-image">
+                <img src="images/about-section.png" alt="About Section img">
             </div>
         </div>
     </section>
@@ -104,7 +110,7 @@
             <div class="skill">
                 <h3>Responsive Design</h3>
                 <p>
-                    Creating websites that work on different screen 
+                    Creating websites that work on different screen
                     sizes.
                 </p>
             </div>
@@ -123,16 +129,16 @@
                 <p>
                     A modern website created using HTML and CSS.
                 </p>
-                <a href="https://gtech-projec.netlify.app/">View Project</a>
+                <a href="https://gtech-projec.netlify.app/" target="_blank" rel="noopener">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Project Two</h3>
                 <p>
-                    A responsive website designed for different screen 
+                    A responsive website designed for different screen
                     sizes.
                 </p>
-                <a href="">View Project</a>
+                <a href="#" class="project-pending">Coming Soon</a>
             </div>
 
             <div class="project-card">
@@ -140,7 +146,7 @@
                 <p>
                     A personal project demonstrating my web development skills.
                 </p>
-                <a href="https://temidayo-pharmaceuticals.netlify.app/">View Project</a>
+                <a href="https://temidayo-pharmaceuticals.netlify.app/" target="_blank" rel="noopener">View Project</a>
             </div>
         </div>
     </section>
@@ -154,52 +160,48 @@
 
         <form>
 
-              <input 
-              type="text" 
-              placeholder="Name" 
-              name="username" 
-              class="contact-input"
-              > <br>
+            <input
+                type="text"
+                placeholder="Name"
+                name="username"
+                class="contact-input"
+                required
+            >
 
-              <input 
-              type="email" 
-              placeholder="Email" 
-              name="Email" 
-              class="contact-input"
-              > <br>
-              
-              <textarea name="Message" 
-              placeholder="Message"
-              ></textarea> <br>
+            <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                class="contact-input"
+                required
+            >
 
-              <button type="submit">Send Mesage</button>
-              
+            <textarea
+                name="message"
+                placeholder="Message"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
 
         </form>
 
         <div class="contact-content">
             <p>
-                Have a project or opportunity ? Feel free to reach out.
+                Have a project or opportunity? Feel free to reach out.
             </p>
             <p><b>Email: samueltemidayo@gmail.com</b></p>
         </div>
 
     </section>
-    
+
     <hr>
 
     <footer>
         <h2>GTS</h2>
         <p>George Temidayo Samuel</p>
-        <p>&copy; 2026 GTS. All Rights Reserved</p> 
-
+        <p>&copy; 2026 GTS. All Rights Reserved</p>
     </footer>
 
-    <!-- How to put your files back on github after making changes
-     first, you need to add the files to the staging area using the command 
-     "git add .". Then, you can commit the changes with a message using 
-     "git commit -m 'Your commit message'". Finally, push the changes 
-     to the remote repository using "git push".    
-    -->
 </body>
 </html>
