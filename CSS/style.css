@@ -47,6 +47,10 @@ section{
     list-style: none;
     display: inline-block;
 }
+.header .menu ul li label{
+    display: block;
+    cursor: pointer;
+}
 .header .menu ul li a{
     display: block;
     padding: 10px;
