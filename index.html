@@ -151,19 +151,34 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- Contact Section -->
+     <!-- Redirect to your website after submitting to google forms start -->
+        <script type="text/javascript">
+            var submitted = false;
+        </script>
+        <iframe 
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        unload = if (submitted){window.location = "index.html";}
+        ></iframe>
+     <!-- Redirect to your website after submitting to google forms start -->
 
+    <section class="contact" id="contact">
         <div class="section-title">
             <p>GET IN TOUCH</p>
             <h2>Contact Me</h2>
         </div>
 
-        <form>
-
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddc3JTOIBiqAzIBw9YJ3Gxx4yMU7-P13FYxMSEeGD0_1_rsQ/formResponse"
+        method="post"
+        target="hidden_iframe"
+        onsubmit="submitted=true"
+        >
             <input
                 type="text"
                 placeholder="Name"
-                name="username"
+                name="entry.1123184905"
                 class="contact-input"
                 required
             >
@@ -171,13 +186,13 @@
             <input
                 type="email"
                 placeholder="Email"
-                name="email"
+                name="entry.184509642"
                 class="contact-input"
                 required
             >
 
             <textarea
-                name="message"
+                name="entry.759873482"
                 placeholder="Message"
                 required
             ></textarea>
