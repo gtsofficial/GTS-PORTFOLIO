@@ -152,17 +152,17 @@
     </section>
 
     <!-- Contact Section -->
-     <!-- Redirect to your website after submitting to google forms start -->
+     <!-- Reset the form after it silently submits to Google Forms -->
         <script type="text/javascript">
             var submitted = false;
         </script>
-        <iframe 
+        <iframe
         name="hidden_iframe"
         id="hidden_iframe"
         style="display: none"
-        unload = if (submitted){window.location = "index.html";}
+        onload="if (submitted) { document.getElementById('contactForm').reset(); submitted = false; }"
         ></iframe>
-     <!-- Redirect to your website after submitting to google forms start -->
+     <!-- Reset the form after it silently submits to Google Forms -->
 
     <section class="contact" id="contact">
         <div class="section-title">
@@ -170,7 +170,8 @@
             <h2>Contact Me</h2>
         </div>
 
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddc3JTOIBiqAzIBw9YJ3Gxx4yMU7-P13FYxMSEeGD0_1_rsQ/formResponse"
+        <form id="contactForm"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddc3JTOIBiqAzIBw9YJ3Gxx4yMU7-P13FYxMSEeGD0_1_rsQ/formResponse"
         method="post"
         target="hidden_iframe"
         onsubmit="submitted=true"
