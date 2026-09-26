@@ -152,17 +152,6 @@
     </section>
 
     <!-- Contact Section -->
-     <!-- Reset the form after it silently submits to Google Forms -->
-        <script type="text/javascript">
-            var submitted = false;
-        </script>
-        <iframe
-        name="hidden_iframe"
-        id="hidden_iframe"
-        style="display: none"
-        onload="if (submitted) { document.getElementById('contactForm').reset(); submitted = false; }"
-        ></iframe>
-     <!-- Reset the form after it silently submits to Google Forms -->
 
     <section class="contact" id="contact">
         <div class="section-title">
@@ -173,8 +162,6 @@
         <form id="contactForm"
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSddc3JTOIBiqAzIBw9YJ3Gxx4yMU7-P13FYxMSEeGD0_1_rsQ/formResponse"
         method="post"
-        target="hidden_iframe"
-        onsubmit="submitted=true"
         >
             <input
                 type="text"
@@ -218,6 +205,31 @@
         <p>George Temidayo Samuel</p>
         <p>&copy; 2026 Temidayo. All Rights Reserved</p>
     </footer>
+
+    <script>
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            })
+            .then(() => {
+                contactForm.reset();
+                alert('Message sent! Thank you for reaching out.');
+            })
+            .catch(() => {
+                // Google Forms with no-cors won't give a real error status,
+                // so this only fires on genuine network failure.
+                alert('Something went wrong. Please check your connection and try again.');
+            });
+        });
+    </script>
 
 </body>
 </html>
