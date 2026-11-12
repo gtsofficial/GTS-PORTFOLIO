@@ -8,6 +8,12 @@ This project represents my practical experience with frontend web development, u
 🌐 **Live Website:** https://george-temidayo.netlify.app/
 
 
+## 🖼️ Preview
+
+![GTS Portfolio Homepage](portfolio-preview.png)
+
+
+
 ## ✨ Features
 
 - **Responsive Design:** Adapts to different screen sizes, including desktops, tablets, and mobile phones.
