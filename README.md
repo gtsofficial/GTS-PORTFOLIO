@@ -10,8 +10,7 @@ This project represents my practical experience with frontend web development, u
 
 ## 🖼️ Preview
 
-![GTS Portfolio Homepage](portfolio-preview.png)
-
+![GTS Portfolio Homepage](portfolio-preview.png.png)
 
 
 ## ✨ Features
