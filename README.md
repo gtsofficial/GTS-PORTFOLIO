@@ -52,3 +52,21 @@ While building this project, I gained practical experience in:
 - Deploying a website using Netlify.
 
 This project helped me strengthen my frontend development fundamentals and understand how different web technologies work together.
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/gtsofficial/GTS-PORTFOLIO.git
+```
+### 2. Open the project folder
+
+Open the downloaded project folder in **Visual Studio Code**.
+
+### 3. Run the website
+
+Open `index.html` in your browser to view the portfolio.
+
+You can also use the **Live Server** extension in Visual Studio Code for a better development experience.
+
